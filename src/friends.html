@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./input.css" res="stylesheet" />
+    <title>friends - Kokoa clone</title>
+  </head>
+  <body>
+    <div class="flex justify-between w-full text-base pt-0.5">
+      <div class="flex pl-3">
+        <h2 class="pt-0.5 pr-2">SKT</h2>
+        <h2 class="pt-0.5 pr-2">5G</h2>
+        <span class="material-symbols-outlined"> signal_cellular_alt </span>
+      </div>
+
+      <h2 class="text-xl -translate-x-1/2" id="clock">00:00</h2>
+
+      <div class="flex pr-3 text-white items-center text-xs">
+        <div class="container bg-black rounded-md p-0.5">
+          <div
+            id="battery"
+            class="border-solid border-2 border-white rounded-md"
+          >
+            <div class="pl-1 pr-1">
+              <div id="charge"></div>
+              <div id="charge-level"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black w-1 h-3"></div>
+      </div>
+    </div>
+
+    <header>
+      <div class="flex justify-between w-full text-3xl mt-5">
+        <span class="ml-5">
+          <h1>Friends</h1>
+        </span>
+        <span class="mr-5">
+          <a class="cursor-pointer">
+            <span class="material-symbols-outlined"> search </span>
+          </a>
+          <a class="cursor-pointer ml-3">
+            <span class="material-symbols-outlined"> music_note </span>
+          </a>
+          <a class="cursor-pointer ml-3" href="index.html">
+            <span class="material-symbols-outlined"> settings </span></a
+          >
+        </span>
+      </div>
+    </header>
+
+    <div class="grid grid-rows-3 mt-6 mb-6 h-14 bg-slate-50">
+      <div></div>
+      <a class="flex justify-self-center cursor-pointer">
+        <span class="material-symbols-outlined mr-1 opacity-30"> info </span>
+        <h2>Friends' Names Display</h2>
+        <span class="material-symbols-outlined ml-1 opacity-30">
+          arrow_forward_ios
+        </span>
+      </a>
+      <div></div>
+    </div>
+
+    <main>
+      <div class="ml-5 mr-5">
+        <div class="flex items-center">
+          <img class="rounded-3xl w-20 h-20" src="metamong.JPG" alt="" />
+          <h3 class="text-3xl ml-6">HAN</h3>
+        </div>
+
+        <div class="h-px mt-8 bg-black opacity-20"></div>
+        <div class="flex justify-between w-full opacity-50 mt-3 text-xl">
+          <h3>Channel</h3>
+          <span class="material-symbols-outlined"> expand_less </span>
+        </div>
+
+        <div class="flex items-center justify-between ml-2 mt-5">
+          <div class="flex items-center">
+            <img class="rounded-3xl w-16 h-16" src="jammanbo.jpeg" alt="" />
+            <h3 class="text-3xl ml-6">Channel</h3>
+          </div>
+          <div class="flex items-center opacity-50">
+            <h3 class="text-xl mr-1">2</h3>
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav>
+      <div class="w-full fixed bottom-0 bg-slate-50">
+        <div class="h-px bg-black opacity-20"></div>
+        <div class="flex h-20 justify-around items-center">
+          <a class="cursor-pointer" href="friends.html">
+            <span class="material-symbols-outlined text-5xl"> person </span>
+          </a>
+          <a class="cursor-pointer" href="chats.html">
+            <span class="material-symbols-outlined text-5xl text-gray-600">
+              chat_bubble
+            </span>
+
+            <span
+              class="absolute top-1 ml-6 bg-red-400 rounded-full w-8 h-8 flex justify-center items-center text-white"
+            >
+              <p>1</p>
+            </span>
+          </a>
+          <a class="cursor-pointer" href="find.html">
+            <span
+              class="material-symbols-outlined text-5xl text-gray-600 font-bold"
+            >
+              search
+            </span>
+          </a>
+          <a class="cursor-pointer" href="more.html">
+            <span
+              class="material-symbols-outlined text-5xl text-gray-600 font-bold"
+            >
+              more_horiz
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="js/battery.js"></script>
+  <script src="js/clock.js"></script>
+</html>
